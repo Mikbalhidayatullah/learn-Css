@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>counter</title>
+	<style type="text/css">
+		.container {
+
+		    counter-reset: section;
+		    background: #4CAF50;
+		    padding: 10px;
+		    font: 400 12px/1.8 "Lato", sans-serif;
+		    color: white;
+		}
+		.container h3::before {
+
+		    counter-increment: section;
+		    content: counter(section);
+		    display: inline-block;
+		    color: white;
+		    background: #555;
+		    border: 5px solid #555;
+		    padding: 1px 15px;
+		    margin-right: 16px;
+		    border-radius: 50%;
+
+		}
+		h1, h2, h3, h4, h5, h6 {
+
+		    font-family: "Segoe UI",Arial,sans-serif;
+		    font-weight: 400;
+		 }
+		 h3 {
+
+		    font-size: 24px;
+
+		}
+	</style>
+</head>
+<body>
+
+	<div class="container w3-content w3-green" style="max-width:500px">
+	  <h3>Pizza</h3>
+	  <h3>Hamburger</h3>
+	  <h3>Hotdogs</h3>
+	</div>
+
+</body>
+</html>

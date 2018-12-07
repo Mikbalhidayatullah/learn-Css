@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>overflow</title>
+	<style type="text/css">
+		div.visible {
+		    background-color: #aeaeae;
+		    width: 200px;
+		    height: 50px;
+		    border: 1px dotted black;
+		    overflow: visible;
+		    margin: 80px 0px;
+		}
+		div.hiden{
+			background-color: blue;
+			width: 200px;
+			height: 50px;
+			border: 1px solid black;
+			overflow: hidden;
+			margin-bottom: 50px;
+		}
+		div.scroll{
+			background-color: blue;
+			width: 200px;
+			height: 80px;
+			border: 1px solid black;
+			overflow: scroll;
+		}
+</style>
+</head>
+<body>
+
+	<h2>CSS Overflow</h2>
+	<div class="visible">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+
+	<div class="hiden">	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt ipsam, sit dolorem placeat dignissimos officiis numquam labore natus nesciunt. A.</div>
+
+	<div class="scroll">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quae pariatur animi ducimus odit vitae soluta voluptas repudiandae error ullam.</div>					
+
+
+</body>
+</html>
